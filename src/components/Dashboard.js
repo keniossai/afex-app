@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { MdOutlineLightMode } from 'react-icons/md'
 import { BiChevronDown } from 'react-icons/bi'
 import { AiOutlineRight } from 'react-icons/ai'
+import Sidebar from './Sidebar'
 
 
 function Dashboard(){
@@ -37,6 +38,7 @@ function Dashboard(){
                     <Demo>Demo</Demo> <BiChevronDown className="down_icon" />
 
             </Header>
+            <Sidebar />
         </Container>
     )
 }
