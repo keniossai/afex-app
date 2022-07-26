@@ -5,6 +5,8 @@ import { MdOutlineLightMode } from 'react-icons/md'
 import { BiChevronDown } from 'react-icons/bi'
 import { AiOutlineRight } from 'react-icons/ai'
 import Sidebar from './Sidebar'
+import SubMenu from './SubMenu'
+import Board from './Board'
 
 
 function Dashboard(){
@@ -39,6 +41,8 @@ function Dashboard(){
 
             </Header>
             <Sidebar />
+            <SubMenu />
+            <Board />
         </Container>
     )
 }
