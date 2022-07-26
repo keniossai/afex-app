@@ -40,6 +40,7 @@ const SigninCard = styled.div`
     height: 570px;
     left: 442px;
     top: 151px;
+    text-align: center;
 
     .checkbox{
         position: absolute;

@@ -15,7 +15,7 @@ function PasswordReset (){
                         <input type="email" name="email" id="" placeholder="Enter your email "/>
                     </div>
                     <p className="otp_note">Note that you’ll be sent an OTP to the email address provided</p>
-                    <Link className="back_link" to="signin">Back</Link>
+                    <Link className="back_link" to="/sign-in">Back</Link>
                     <Link className='proceed' to="">Proceed</Link>
                 </form>
             </SigninCard>

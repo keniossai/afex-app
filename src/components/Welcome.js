@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 function Welcome (){
     return(
         <div className="container">
-            <img src="../images/logo.svg" alt="" />
+            {/* <img src="../images/logo.svg" alt="" /> */}
             <Card className="card">
                 <h1>Sign in to ComX</h1>
                 <p>Welcome to ComX</p>
-                <Link to="signin" className='sign_in'>Sign in</Link>
+                <Link to="/sign-in" className='sign_in'>Sign in</Link>
             </Card>
             <Register>
                 <h1>Create an Account</h1>
@@ -29,6 +29,7 @@ const Card = styled.div`
     height: 228px;
     left: 442px;
     top: 190px;
+    text-align: center;
 
     p{
         font-weight: 500;
@@ -47,6 +48,7 @@ const Card = styled.div`
         text-decoration: none;
         color: #fff;
         font-weight: bold;
+        
     }
 `
 
@@ -57,6 +59,7 @@ const Register = styled.div`
     left: 442px;
     top: 450px;
     background: #fff;
+    text-align: center;
     
     .register{
         position: absolute;
