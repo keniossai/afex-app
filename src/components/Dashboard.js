@@ -7,6 +7,8 @@ import { AiOutlineRight } from 'react-icons/ai'
 import Sidebar from './Sidebar'
 import SubMenu from './SubMenu'
 import Board from './Board'
+import ScrollCard from './ScrollCard'
+import Ticktape from './Tickertape'
 
 
 function Dashboard(){
@@ -43,6 +45,8 @@ function Dashboard(){
             <Sidebar />
             <SubMenu />
             <Board />
+            <ScrollCard />
+            <Ticktape />
         </Container>
     )
 }

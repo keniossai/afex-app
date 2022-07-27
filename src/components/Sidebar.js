@@ -41,7 +41,7 @@ export default Sidebar
 const Aside = styled.aside`
     position: absolute;
     width: 83px;
-    height: 100%;
+    height: 900px;
     background: #fff;
     left: 0px;
     top: 2px;
