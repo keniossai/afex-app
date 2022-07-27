@@ -9,6 +9,7 @@ import SubMenu from './SubMenu'
 import Board from './Board'
 import ScrollCard from './ScrollCard'
 import Ticktape from './Tickertape'
+import Tradelog from './Tradelog'
 
 
 function Dashboard(){
@@ -40,12 +41,12 @@ function Dashboard(){
                     </NavAmount>
                 </RightContainer>
                     <Demo>Demo</Demo> <BiChevronDown className="down_icon" />
-
             </Header>
             <Sidebar />
             <SubMenu />
             <Board />
             <ScrollCard />
+            <Tradelog />
             <Ticktape />
         </Container>
     )
@@ -55,8 +56,8 @@ export default Dashboard
 
 const Container = styled.div`
     width: 1440px;
-    height: 900px;
-    
+    height: 700px;
+    overflow: hidden;
 `
 
 const Header = styled.nav`
