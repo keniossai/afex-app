@@ -1,31 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-function Register (){
+function Login (){
     return (
         <div className='container'>
-            <RegisterCard>
+            <LoginCard>
                 <h1>Register new account</h1>
                 <p>Sign up for an account and start trading today</p>
-                <span>Select select the category that best describes you</span>
-                    <Link to="" className='dark_btn'>Individual</Link>
-                    <Link to="/register/corporate/company-information" className='white_btn'>Corperate</Link>
                 <form action="" method="post">
-                    <div className="form_card">
-                        <label htmlFor="">Your First Name</label>
-                        <input className='first_name' type="text" name="name" placeholder='Enter your first name' />
-                        <label className='last_name_label' htmlFor="">Your Last Name</label>
-                        <input className='last_name' type="text" name="name" placeholder='Enter your last name' />
-                    </div>
                     <div className="email_card">
-                        <label htmlFor="">Your Email</label>
+                        <label htmlFor="">Password</label>
                         <input className='email_input' type="text" name="name" placeholder='Enter your first name' />
                     </div>
-                    <Link to="/register/individual/login-details" className='next_btn'>Next Step</Link>
+                    <div className="password_card">
+                        <label htmlFor="">Confirm Password</label>
+                        <input className='password_input' type="password" name="password" placeholder='********' />
+                    </div>
+                    <div className="form_card">
+                        <label htmlFor="">Phone Number</label>
+                        <select name="Phone" className='phone' id="">
+                            <option value="">+234</option>
+                            <option value="">+1</option>
+                            <option value="">+23</option>
+                            <option value="">+212</option>
+                            <option value="">+222</option>
+                            <option value="">+321</option>
+                        </select>
+                        <label className='last_name_label' htmlFor="">Phone</label>
+                        <input className='phone_number' type="text" name="name" placeholder='Enter your phone number' />
+                    </div>
+                    <Link to="/register/individual/otp-verification" className='next_btn'>Verify Account</Link>
                 </form>
-            </RegisterCard>
+            </LoginCard>
             <div class="row">
                 <div class="border">
                     <Stepper class="wrapper-progressBar">
@@ -43,14 +51,14 @@ function Register (){
     )
 }
 
-export default Register
+export default Login
 
 const Stepper = styled.div`
     position: relative;
     width: 808px;
     height: 12px;
     left: 372px;
-    top: 640px;
+    top: 700px;
 
     span{
         position: relative;
@@ -110,14 +118,13 @@ const Stepper = styled.div`
 }
 `
 
-
-const RegisterCard = styled.div`
+const LoginCard = styled.div`
     position: absolute;
     background: #fff;
     width: 555px;
     height: 570px;
     left: 442px;
-    top: 121px;
+    top: 151px;
     text-align: center;
 
     input{
@@ -142,14 +149,14 @@ const RegisterCard = styled.div`
         right: 68.05%;
         top: 180px;
         padding: 15px;
-        color: #fff;
-        background: #262626;
+        color: #000;
+        background: #FFFFFF;
         border: 1px solid #E8ECEF;
         border-radius: 2px;
 
         :hover{
-            background: #fff;
-            color: #000;
+            background: #000;
+            color: #fff;
         }
     }
     .white_btn{
@@ -160,15 +167,16 @@ const RegisterCard = styled.div`
         right: 33.92%;
         top: 180px;
         padding: 15px;
-        background: #FFFFFF;
+        background: #262626;
+        
         border: 1px solid #E8ECEF;
         border-radius: 2px;
         width: 150px;
-        color: #000;
+        color: #fff;
 
         :hover{
-            background: #000;
-            color: white;
+            background: #fff;
+            color: #000;
         }
     }
 
@@ -192,7 +200,7 @@ const RegisterCard = styled.div`
     position: absolute;
     width: 457px;
     height: 84px;
-    bottom: 226px;
+    top: 336px;
     text-align: left;
 
     .last_name_label{
@@ -212,12 +220,12 @@ const RegisterCard = styled.div`
         color: #1E1E1E;
     }
 
-    .first_name{
+    .phone{
         box-sizing: border-box;
-        width: 230px;
+        width: 130px;
         position: relative;
         height: 52px;
-        left: -50px;
+        left: -45px;
         padding: 0px 10px;
         top: 42px;
 
@@ -226,12 +234,12 @@ const RegisterCard = styled.div`
         border-radius: 2px;
     }
 
-    .last_name{
+    .phone_number{
         box-sizing: border-box;
-        width: 230px;
+        width: 330px;
         position: absolute;
         height: 52px;
-        left: 60.3%;
+        left: 39.1%;
         right: -0.11%;
         top: 42px;
         padding: 0px 10px;
@@ -244,16 +252,16 @@ const RegisterCard = styled.div`
 
    .email_card{
     position: absolute;
-    width: 457px;
+    width: 450px;
     height: 84px;
     left: -130px;
-    bottom: 110px;
+    top: 150px;
 
     label{
         position: absolute;
         width: 101px;
         height: 16px;
-        left: 150px;
+        left: 155px;
         top: 70;
         font-style: normal;
         font-weight: 400;
@@ -275,6 +283,39 @@ const RegisterCard = styled.div`
             border-radius: 2px;
         }
    }
+   .password_card{
+    position: absolute;
+    width: 450px;
+    height: 84px;
+    left: -130px;
+    top: 250px;
+
+    label{
+        position: absolute;
+        width: 121px;
+        height: 16px;
+        left: 165px;
+        top: 70;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #1E1E1E;
+    }
+
+        .password_input{
+            box-sizing: border-box;
+            width: 470px;
+            position: absolute;
+            height: 52px;
+            left: 170px;
+            padding: 0px 10px;
+            top: 32px;
+            background: #FFFFFF;
+            border: 1px solid #E8ECEF;
+            border-radius: 2px;
+        }
+   }
    .next_btn{
     position: absolute;
     width: 132px;
@@ -284,16 +325,11 @@ const RegisterCard = styled.div`
     background: transparent;
     border: none;
     cursor: pointer;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.3px;
-text-transform: uppercase;
-
-color: #D71E0E;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D71E0E;
    }
 `

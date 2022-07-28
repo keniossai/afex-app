@@ -5,32 +5,32 @@ function SubMenu () {
     return (
       <Menu>
             <div className="search">
-                <img src="../images/submenu/serch.svg" alt="" />
+                <img src="/../images/submenu/serch.svg" alt="" />
                 <input type="search" className="search_input" placeholder='Search' />
             </div>
         <div className="container">
             <div className="product_preview">
-                <img src="../images/submenu/trending-up.svg" alt="" />
+                <img src="/../images/submenu/trending-up.svg" alt="" />
                 <span>Product View</span>
             </div>
             <div className="order_book">
-                <img src="../images/submenu/book.svg" alt="" />
+                <img src="/../images/submenu/book.svg" alt="" />
                 <span>Order Book</span>
             </div>
             <div className="price_history">
-                <img src="../images/submenu/Shape.svg" alt="" />
+                <img src="/../images/submenu/Shape.svg" alt="" />
                 <span>Price History</span>
             </div>
             <div className="open_order">
-                <img src="../images/submenu/eye.svg" alt="" />
+                <img src="/../images/submenu/eye.svg" alt="" />
                 <span>Open Order</span>
             </div>
             <div className="close_trade">
-                <img src="../images/submenu/Shape-1.svg" alt="" />
+                <img src="/../images/submenu/Shape-1.svg" alt="" />
                 <span>Close Trade</span>
             </div>
             <div className="cancel_trade">
-                <img src="../images/submenu/x-circle.svg" alt="" />
+                <img src="/../images/submenu/x-circle.svg" alt="" />
                 <span>Cancelled Trades</span>
             </div>
         </div>

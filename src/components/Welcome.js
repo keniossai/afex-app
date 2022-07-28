@@ -14,7 +14,7 @@ function Welcome (){
             <Register>
                 <h1>Create an Account</h1>
                 <p>Join the Family</p>
-                <Link to="register" className='register'>Sign in</Link>
+                <Link to="/register/individual/basic-information" className='register'>Sign in</Link>
             </Register>
         </div>
     )

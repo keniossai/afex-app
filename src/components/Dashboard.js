@@ -17,8 +17,8 @@ function Dashboard(){
         <Container>
             <Header>
                 <Logo>
-                    <Link to="/">
-                        <img src="../images/logo.svg" alt="" />
+                    <Link to="/welcome">
+                        <img src="/../images/logo.svg" alt="" />
                     </Link>
                 </Logo>
                 <RightContainer>

@@ -8,27 +8,27 @@ function Sidebar (){
         <Aside>
             <Container>
                 <div className="overview">
-                    <img src="../images/icon.svg" alt="" />
+                    <img src="/../images/icon.svg" alt="" />
                     <span>Overview</span>
                 </div>
                 <div className="market">
-                    <img src="../images/icon-trade.svg" alt="" />
+                    <img src="/../images/icon-trade.svg" alt="" />
                     <span>Market</span>
                 </div>
                 <div className="portfolio">
-                    <img src="../images/briefcase.svg" alt="" />
+                    <img src="/../images/briefcase.svg" alt="" />
                     <span>Portfolio</span>
                 </div>
                 <div className="community">
-                    <img src="../images/Group 4.svg" alt="" />
+                    <img src="/../images/Group 4.svg" alt="" />
                     <span>Community</span>
                 </div>
                 <div className="reports">
-                    <img src="../images/Group 5.svg" alt="" />
+                    <img src="/../images/Group 5.svg" alt="" />
                     <span>Reports</span>
                 </div>
                 <div className="settings">
-                    <img src="../images/Group 3.svg" alt="" />
+                    <img src="/../images/Group 3.svg" alt="" />
                     <span>Settings</span>
                 </div>
             </Container>
@@ -85,6 +85,7 @@ const Container = styled.div`
         right: 26.51%;
         top: 25.36%;
         bottom: 76.95%;
+        cursor: pointer;
 
         img{
             position: relative;
@@ -114,6 +115,7 @@ const Container = styled.div`
         right: 21.69%;
         top: 35.95%;
         bottom: 68.55%;
+        cursor: pointer;
 
         img{
             position: relative;
@@ -143,6 +145,7 @@ const Container = styled.div`
         right: 12.05%;
         top: 45.35%;
         bottom: 60.25%;
+        cursor: pointer;
 
         img{
             position: relative;
@@ -171,6 +174,7 @@ const Container = styled.div`
         right: 12.05%;
         top: 55.35%;
         bottom: 60.25%;
+        cursor: pointer;
 
         img{
             position: relative;
@@ -199,6 +203,7 @@ const Container = styled.div`
         right: 12.05%;
         top: 65.35%;
         bottom: 60.25%;
+        cursor: pointer;
 
         img{
             position: relative;

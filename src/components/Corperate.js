@@ -3,36 +3,117 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 
-function Register (){
+function Corperate (){
     return (
         <div className='container'>
-            <RegisterCard>
+            <CorperateCard>
                 <h1>Register new account</h1>
                 <p>Sign up for an account and start trading today</p>
                 <span>Select select the category that best describes you</span>
-                    <Link to="" className='dark_btn'>Individual</Link>
+                    <Link to="/register/individual/basic-information" className='dark_btn'>Individual</Link>
                     <Link to="" className='white_btn'>Corperate</Link>
                 <form action="" method="post">
-                    <div className="form_card">
-                        <label htmlFor="">Your First Name</label>
-                        <input className='first_name' type="text" name="name" placeholder='Enter your first name' />
-                        <label className='last_name_label' htmlFor="">Your Last Name</label>
-                        <input className='last_name' type="text" name="name" placeholder='Enter your last name' />
-                    </div>
                     <div className="email_card">
-                        <label htmlFor="">Your Email</label>
+                        <label htmlFor="">Company Name</label>
                         <input className='email_input' type="text" name="name" placeholder='Enter your first name' />
                     </div>
-                    <button type="submit" className='next_btn'>Next Step</button>
+                    <div className="form_card">
+                        <label htmlFor="">Type of Business</label>
+                        <select name="" className='first_name' id="">
+                            <option value="">Technology</option>
+                            <option value="">Finance</option>
+                            <option value="">Investment</option>
+                        </select>
+                        <label className='last_name_label' htmlFor="">Date of Incorporation</label>
+                        <input className='last_name' type="date" name="name" placeholder='Select date' />
+                    </div>
+                    <Link to="/register/corporate/otp-verification" className='next_btn'>Next Step</Link>
                 </form>
-            </RegisterCard>
+            </CorperateCard>
+            <div class="row">
+                <div class="border">
+                    <Stepper class="wrapper-progressBar">
+                <span>3/4</span>
+                    <ul class="progressBar">
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                    </Stepper>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default Register
+export default Corperate
 
-const RegisterCard = styled.div`
+const Stepper = styled.div`
+    position: relative;
+    width: 808px;
+    height: 12px;
+    left: 372px;
+    top: 700px;
+
+    span{
+        position: relative;
+        left: -50px;
+        top: 10px;
+    }
+
+.progressBar li {
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    position: relative;
+    text-align: center;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ddd;
+    border-left:none;
+    display: block;
+    text-align: center;
+    margin: 8.5px auto 0px;
+    background-color: #eee;
+}
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 97%;
+    height: 2px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-right:none;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.active {
+    color: dodgerblue;
+}
+
+.progressBar li.active:before {
+    border-color: #D71E0E;
+    background-color: #D71E0E;
+}
+
+.progressBar .active:after {
+    background-color: #D71E0E;
+}
+`
+const CorperateCard = styled.div`
     position: absolute;
     background: #fff;
     width: 555px;
@@ -40,6 +121,14 @@ const RegisterCard = styled.div`
     left: 442px;
     top: 151px;
     text-align: center;
+
+    input{
+        outline: none;
+    }
+
+    p{
+        font-size: 15px;
+    }
 
     .switch_button{
         display: flex;
@@ -55,14 +144,14 @@ const RegisterCard = styled.div`
         right: 68.05%;
         top: 180px;
         padding: 15px;
-        color: #fff;
-        background: #262626;
+        color: #000;
+        background: #FFFFFF;
         border: 1px solid #E8ECEF;
         border-radius: 2px;
 
         :hover{
-            background: #fff;
-            color: #000;
+            background: #000;
+            color: #fff;
         }
     }
     .white_btn{
@@ -73,15 +162,16 @@ const RegisterCard = styled.div`
         right: 33.92%;
         top: 180px;
         padding: 15px;
-        background: #FFFFFF;
+        background: #262626;
+        
         border: 1px solid #E8ECEF;
         border-radius: 2px;
         width: 150px;
-        color: #000;
+        color: #fff;
 
         :hover{
-            background: #000;
-            color: white;
+            background: #fff;
+            color: #000;
         }
     }
 
@@ -105,7 +195,7 @@ const RegisterCard = styled.div`
     position: absolute;
     width: 457px;
     height: 84px;
-    bottom: 226px;
+    top: 336px;
     text-align: left;
 
     .last_name_label{
@@ -130,7 +220,7 @@ const RegisterCard = styled.div`
         width: 230px;
         position: relative;
         height: 52px;
-        left: -50px;
+        left: -55px;
         padding: 0px 10px;
         top: 42px;
 
@@ -157,16 +247,16 @@ const RegisterCard = styled.div`
 
    .email_card{
     position: absolute;
-    width: 457px;
+    width: 450px;
     height: 84px;
     left: -130px;
-    bottom: 110px;
+    top: 250px;
 
     label{
         position: absolute;
         width: 101px;
         height: 16px;
-        left: 150px;
+        left: 165px;
         top: 70;
         font-style: normal;
         font-weight: 400;

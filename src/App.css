@@ -13,7 +13,7 @@
   padding: 10px 5px;
   border-radius: 100px;
   text-align: center;
-  position: sticky;
+  position: fixed;
 }
 
 a{
@@ -22,4 +22,12 @@ a{
 
 img{
   text-align: center;
+}
+
+.chaka{
+  position: relative;
+    width: 808px;
+    height: 12px;
+    left: 372px;
+    top: 700px;
 }

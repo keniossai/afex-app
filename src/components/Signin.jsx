@@ -21,10 +21,10 @@ function Signin (){
                     <div className="form-group">
                         <input className='checkbox' type="checkbox" name="checkbox" value="Boat" />
                         <label className='stay_signin' htmlFor="check"> Stay Signed in</label>
-                        <Link className="password_for" to="/sign-in/password-reset/otp-validation">Forgot password?</Link>
+                        <Link className="password_for" to="/password-reset/otp-validation">Forgot password?</Link>
                     </div>
                     <button className="form_button" type="submit">Sign in</button>
-                    <Link className='btn_back' to="/">Back</Link>
+                    <Link className='btn_back' to="/welcome">Back</Link>
                 </form>
             </SigninCard>
         </div>
@@ -157,7 +157,6 @@ const SigninCard = styled.div`
         box-sizing: border-box;
         border: none;
         font-family: 'Roboto';
-        /* font-style: normal; */
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
