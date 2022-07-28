@@ -27,7 +27,7 @@ function Corperate (){
                         <label className='last_name_label' htmlFor="">Date of Incorporation</label>
                         <input className='last_name' type="date" name="name" placeholder='Select date' />
                     </div>
-                    <Link to="/register/corporate/otp-verification" className='next_btn'>Next Step</Link>
+                    <Link to="/register/corporate/login-details" className='next_btn'>Next Step</Link>
                 </form>
             </CorperateCard>
             <div class="row">

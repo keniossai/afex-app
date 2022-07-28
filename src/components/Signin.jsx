@@ -23,7 +23,7 @@ function Signin (){
                         <label className='stay_signin' htmlFor="check"> Stay Signed in</label>
                         <Link className="password_for" to="/password-reset/otp-validation">Forgot password?</Link>
                     </div>
-                    <button className="form_button" type="submit">Sign in</button>
+                    <Link to="/dashboard/market/order-book" className="form_button">Sign in</Link>
                     <Link className='btn_back' to="/welcome">Back</Link>
                 </form>
             </SigninCard>
@@ -162,6 +162,7 @@ const SigninCard = styled.div`
         line-height: 16px;
         color: #FFFFFF;
         cursor: pointer;
+        padding: 10px;
     }
 
     .btn_back{

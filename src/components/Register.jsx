@@ -29,11 +29,11 @@ function Register (){
             <div class="row">
                 <div class="border">
                     <Stepper class="wrapper-progressBar">
-                <span>3/4</span>
+                <span>1/4</span>
                     <ul class="progressBar">
                         <li class="active"></li>
-                        <li class="active"></li>
-                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
                         <li></li>
                     </ul>
                     </Stepper>

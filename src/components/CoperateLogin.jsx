@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 function CoperateLogin (){
@@ -21,16 +22,16 @@ function CoperateLogin (){
                         <label htmlFor="">Confirm Password</label>
                         <input className='confirm_input' type="password" name="password" placeholder='********' />
                     </div>
-                    <button type="submit" className='next_btn'>Next step</button>
+                    <Link to="/register/corporate/otp-verification" className='next_btn'>Next step</Link>
                 </form>
             </LoginCard>
             <div class="row">
                 <div class="border">
                     <Stepper class="wrapper-progressBar">
-                <span>1/4</span>
+                <span>2/4</span>
                     <ul class="progressBar">
                         <li class="active"></li>
-                        <li class=""></li>
+                        <li class="active"></li>
                         <li class=""></li>
                         <li></li>
                     </ul>
